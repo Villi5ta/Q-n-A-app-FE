@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --page-color-one: #e14d2a;
+  --page-color-two: #fd841f;
+  --page-color-three: #3e6d9c;
+  --page-color-four: #001253;
+
+  --text-color-one: #ffff;
+  --text-color-two: #001253;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  font-family: "Roboto+condensed", sans-serif;
+}
+
+h1 {
+  color: var(--text-color-one);
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}

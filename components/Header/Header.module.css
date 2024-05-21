@@ -1,0 +1,38 @@
+.wrapper {
+  background-color: var(--page-color-one);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 3rem;
+}
+
+.menu {
+  padding: 0.1rem 0;
+  border-bottom: 0.2rem solid var(--text-color-one);
+}
+
+.menu ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu nav a {
+  color: var(--text-color-one);
+  text-decoration: none;
+  padding: 0 0.4rem;
+}
+
+.menu li:hover {
+  transition: 0.3s;
+}
+
+.menu li :hover {
+  color: var(--text-color-two);
+  background-color: var(--text-color-one);
+  border-bottom: 0.2rem solid var(--text-color-one);
+}

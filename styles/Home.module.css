@@ -1,0 +1,29 @@
+.heroSectionWrapper {
+  background-color: var(--page-color-one);
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  padding-bottom: 0;
+}
+
+.heroTextWrapper {
+  width: 100%;
+}
+
+.heroText {
+  color: var(--text-color-one);
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-transform: capitalize;
+  font-size: 3rem;
+  border-bottom: 0.3rem solid var(--text-color-one);
+}
+
+.main img {
+  width: 80%;
+}
+
+.imgWrapper {
+  display: flex;
+  justify-content: right;
+}
