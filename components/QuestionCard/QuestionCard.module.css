@@ -1,0 +1,17 @@
+.questionCard {
+  gap: 1rem;
+  width: 50rem;
+  border: 3px solid var(--page-color-two);
+  border-left: none;
+  border-right: none;
+}
+
+.questionTitle {
+  font-size: 2rem;
+  padding: 0.4rem;
+}
+
+.questionDescription {
+  font-size: 1.2rem;
+  padding: 0.4rem;
+}

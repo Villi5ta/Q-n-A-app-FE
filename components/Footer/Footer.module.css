@@ -1,0 +1,6 @@
+.wrapper {
+  padding: 3rem;
+  background-color: var(--page-color-one);
+  display: flex;
+  justify-content: space-between;
+}

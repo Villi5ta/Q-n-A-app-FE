@@ -7,16 +7,30 @@ type NavType = {
   href: string;
 };
 
+type LogoType = {
+  id: number;
+  title: string;
+  href: string;
+};
+
 type HeaderProps = {
-  pageName: string;
+  pageName: LogoType[];
   nav: NavType[];
 };
 
 const Header = ({ pageName, nav }: HeaderProps) => {
   return (
-    <div className={styles.wrapper}>
+    <header className={styles.wrapper}>
       <div className={styles.brand}>
-        <h1>{pageName}</h1>
+        <div>
+          {pageName.map((name) => {
+            return (
+              <h1 key={name.id}>
+                <a href={name.href}>{name.title}</a>
+              </h1>
+            );
+          })}
+        </div>
       </div>
       <div className={styles.menu}>
         <nav>
@@ -31,7 +45,7 @@ const Header = ({ pageName, nav }: HeaderProps) => {
           </ul>
         </nav>
       </div>
-    </div>
+    </header>
   );
 };
 

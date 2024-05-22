@@ -3,6 +3,7 @@
 :root {
   --page-color-one: #e14d2a;
   --page-color-two: #fd841f;
+  --page-color-two-darker: #ff7300;
   --page-color-three: #3e6d9c;
   --page-color-four: #001253;
 
@@ -21,8 +22,15 @@ body {
   font-family: "Roboto+condensed", sans-serif;
 }
 
-h1 {
+h1 a {
   color: var(--text-color-one);
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   text-transform: capitalize;
+  text-decoration: none;
+  font-size: 2.2rem;
+}
+
+h1:hover {
+  transition: 1s;
+  scale: 1.1;
 }
