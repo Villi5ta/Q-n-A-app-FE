@@ -10,14 +10,16 @@ type QCardProps = {
 
 const QuestionCard = ({ id, title, question }: QCardProps) => {
   return (
-    <div className={styles.questionCard}>
-      <div className={styles.questionTitle}>
-        <h4>{title}</h4>
+    <Link href={`/question/${id}`}>
+      <div className={styles.questionCard}>
+        <div className={styles.questionTitle}>
+          <h4>{title}</h4>
+        </div>
+        <div className={styles.questionDescription}>
+          <p>{question}</p>
+        </div>
       </div>
-      <div className={styles.questionDescription}>
-        <p>{question}</p>
-      </div>
-    </div>
+    </Link>
   );
 };
 

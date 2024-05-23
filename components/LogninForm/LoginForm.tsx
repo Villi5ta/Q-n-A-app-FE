@@ -36,7 +36,7 @@ const LoginForm = () => {
         setBadLoginData(false);
         cookie.set("jwt_token", response.data.jwt_token);
         console.log("GOOD");
-        // router.push("/");
+        router.push("/questions");
       }
       setLoadingState(false);
     } catch (err) {
