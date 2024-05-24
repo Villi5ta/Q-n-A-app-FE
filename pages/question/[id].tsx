@@ -6,6 +6,7 @@ import axios from "axios";
 import QuestionWrapper from "../../components/QuestionWrapper/QuestionWrapper";
 import AnswerForm from "../../components/AnswerForm/AnswerForm";
 import AnswerWrapper from "../../components/AnswerWrapper/AnswerWrapper";
+import QuestionCard from "@/components/QuestionCard/QuestionCard";
 
 const Question = () => {
   const router = useRouter();
@@ -18,6 +19,10 @@ const Question = () => {
       const headers = {
         authorization: cookies.get("jwt_token"),
       };
+
+      if (headers.authorization === undefined) {
+        router.push("/login");
+      }
 
       const response = await axios.get(
         `${process.env.SERVER_URL}/question/${router.query.id}`,

@@ -2,10 +2,12 @@ export type QuestionType = {
   id: string;
   title: string;
   question: string;
-  answer: AnswerType[];
+  userName: string;
+  answers: AnswerType[];
 };
 
 export type AnswerType = {
+  answers: any;
   text: string;
   userId: string;
 };

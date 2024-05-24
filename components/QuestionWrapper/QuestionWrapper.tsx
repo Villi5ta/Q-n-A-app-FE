@@ -11,7 +11,8 @@ const QuestionWrapper = ({ question }: QuestionWrapperProps) => {
   return (
     <main>
       <h3>{question.title}</h3>
-      <p>{question.question}</p>
+      <p>Asker: {question.userName}</p>
+      <p>Question: {question.question}</p>
     </main>
   );
 };

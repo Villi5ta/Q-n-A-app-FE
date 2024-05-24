@@ -3,7 +3,7 @@ import styles from "./Button.module.css";
 import Spinner from "../Spinner/Spinner";
 
 type ButtonProps = {
-  onClicking: () => void;
+  onClicking?: () => void;
   isLoading: boolean;
   title: string;
   type?: "Warning" | "Regular";

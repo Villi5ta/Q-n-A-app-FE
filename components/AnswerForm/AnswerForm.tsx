@@ -21,6 +21,7 @@ const AnswerForm = () => {
 
       if (response.status === 201) {
         console.log("question added");
+        window.location.reload();
       }
     } catch (err) {
       console.log(text);

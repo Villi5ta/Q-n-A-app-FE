@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.main h2 {
+  text-align: center;
+}
+
+.featureWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.featureBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  background-color: var(--page-color-one);
+  color: var(--text-color-one);
+  padding: 1rem;
+  text-align: justify;
+  box-shadow: -7px 10px 0 0 var(--page-color-two);
+}

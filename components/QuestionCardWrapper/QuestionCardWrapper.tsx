@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./QuestionCardWrapper.module.css";
-import { QuestionType } from "../../types/question";
+import { AnswerType, QuestionType } from "../../types/question";
 import QuestionCard from "../QuestionCard/QuestionCard";
 
 type QCardWrapperType = {
@@ -8,6 +8,7 @@ type QCardWrapperType = {
 };
 
 const QuestionCardWrapper = ({ questions }: QCardWrapperType) => {
+  console.log(questions);
   return (
     <div className={styles.wrapper}>
       {questions.map((question) => (
@@ -16,6 +17,8 @@ const QuestionCardWrapper = ({ questions }: QCardWrapperType) => {
           key={question.id}
           title={question.title}
           question={question.question}
+          userName={question.userName}
+          answerNumber={question.answers.length}
         />
       ))}
     </div>
