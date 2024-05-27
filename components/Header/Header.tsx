@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
+import burgerBtn from "../../assets/burger-btn.svg";
+import { useState } from "react";
 
 type NavType = {
   id: number;
@@ -19,6 +21,7 @@ type HeaderProps = {
 };
 
 const Header = ({ pageName, nav }: HeaderProps) => {
+  const [isMobileMenuVisible, setMobileMenuVisibility] = useState(false);
   return (
     <header className={styles.wrapper}>
       <div className={styles.brand}>
@@ -32,7 +35,33 @@ const Header = ({ pageName, nav }: HeaderProps) => {
           })}
         </div>
       </div>
+
       <div className={styles.menu}>
+        <nav>
+          <ul className={styles.links}>
+            {nav.map((link) => {
+              return (
+                <li key={link.id}>
+                  <a href={link.href}>{link.title}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+      </div>
+
+      <button
+        className={styles.burgerBtn}
+        onClick={() => setMobileMenuVisibility((prevState) => !prevState)}
+      >
+        <img src={burgerBtn.src} alt="Burger button" />
+      </button>
+
+      <div
+        className={`${styles.mobileMenu} ${
+          isMobileMenuVisible && styles.mobileMenuVisible
+        }`}
+      >
         <nav>
           <ul className={styles.links}>
             {nav.map((link) => {

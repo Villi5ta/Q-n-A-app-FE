@@ -3,18 +3,18 @@ import React from "react";
 
 type FooterProps = {
   websiteName: string;
-  socialLinks: string;
+  preface: string;
 };
 
-const Footer = ({ websiteName, socialLinks }: FooterProps) => {
+const Footer = ({ websiteName, preface }: FooterProps) => {
   return (
     <footer>
       <div className={styles.wrapper}>
         <div className={styles.websiteName}>
           <h4>{websiteName}</h4>
         </div>
-        <div className={styles.socialLinks}>
-          <p>{socialLinks}</p>
+        <div className={styles.preface}>
+          <p>{preface}</p>
         </div>
       </div>
     </footer>

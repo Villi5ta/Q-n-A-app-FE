@@ -34,7 +34,7 @@ const Question = () => {
       console.log(err);
 
       //@ts-expect-error
-      if (response.status === 401) {
+      if (err.response && err.response.status === 401) {
         router.push("/login");
       }
     }

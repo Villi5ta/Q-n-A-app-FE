@@ -4,6 +4,7 @@ export type QuestionType = {
   question: string;
   userName: string;
   answers: AnswerType[];
+  createdAt: string;
 };
 
 export type AnswerType = {

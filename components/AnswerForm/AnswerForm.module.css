@@ -1,0 +1,30 @@
+.main {
+  border-top: 0.2rem solid var(--page-color-one);
+  text-align: center;
+  background-color: var(--text-color-one);
+  padding-bottom: 1rem;
+}
+
+.answerInput {
+  margin-top: 2rem;
+  width: 40rem;
+  height: 5rem;
+}
+
+.error {
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .answerInput {
+    margin-top: 1.5rem;
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .answerInput {
+    margin-top: 1rem;
+    width: 25rem;
+  }
+}

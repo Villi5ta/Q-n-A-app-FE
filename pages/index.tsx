@@ -3,7 +3,7 @@ import PageTemplate from "../components/PageTemplate/PageTemplate";
 import heroImg from "../assets/heroImg.png";
 import Features from "../components/Features/Features";
 import Link from "next/link";
-
+import FAQWrapper from "../components/FAQWrapper/FAQWrapper";
 import React from "react";
 
 const Index = () => {
@@ -13,12 +13,12 @@ const Index = () => {
         <div className={styles.heroSectionWrapper}>
           <div className={styles.heroTextWrapper}>
             <div className={styles.heroText}>
-              <p>you got questions we got answers</p>
+              <p>you got questions, we got answers</p>
             </div>
             <div className={styles.heroBtn}>
-              <button>
-                <Link href={"/login"}>Try it NOW!</Link>
-              </button>
+              <Link href={"/login"}>
+                <button>Try it NOW!</button>
+              </Link>
             </div>
           </div>
           <div className={styles.imgWrapper}>
@@ -26,6 +26,7 @@ const Index = () => {
           </div>
         </div>
         <Features />
+        <FAQWrapper />
       </div>
     </PageTemplate>
   );

@@ -1,17 +1,71 @@
+.main a {
+  text-decoration: none;
+  color: var(--page-color-seven);
+}
 .questionCard {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   width: 50rem;
-  border: 3px solid var(--page-color-two);
+  border: 5px solid var(--page-color-two);
   border-left: none;
   border-right: none;
+  transition: 0.2s;
 }
 
-.questionTitle {
+.questionCard:hover {
+  border: 5px solid var(--page-color-two-darker);
+  background-color: var(--light-highlight);
+  scale: 1.02;
+
+  .questionTitle {
+    background-color: var(--page-color-two);
+  }
+}
+
+.questionCard a {
+  text-decoration: none;
+}
+
+a .questionTitle {
   font-size: 2rem;
   padding: 0.4rem;
+  border-bottom: 2px solid var(--page-color-two);
 }
 
 .questionDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   font-size: 1.2rem;
-  padding: 0.4rem;
+  padding: 1rem;
+  text-indent: 2em;
+}
+
+.answerNumber {
+  text-align: right;
+}
+
+@media only screen and (max-width: 850px) {
+  .questionCard {
+    width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .questionCard {
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .questionCard {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .questionCard {
+    width: 25rem;
+  }
 }

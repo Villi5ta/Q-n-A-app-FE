@@ -4,11 +4,13 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import axios from "axios";
 import cookies from "js-cookie";
+import styles from "./QuestionForm.module.css";
 
 const QuestionForm = () => {
   const router = useRouter();
   const [title, setTitle] = useState("");
   const [question, setQuestion] = useState("");
+  const [error, setError] = useState(false);
 
   const postQuestion = async () => {
     const questionData = {
@@ -17,7 +19,7 @@ const QuestionForm = () => {
     };
 
     if (!title || !question) {
-      console.log("fill all fields");
+      setError(true);
       return;
     }
 
@@ -40,7 +42,6 @@ const QuestionForm = () => {
       );
 
       if (response.status === 200) {
-        console.log("GOOD");
         router.push("/questions");
       }
     } catch (err) {
@@ -48,8 +49,9 @@ const QuestionForm = () => {
     }
   };
   return (
-    <div>
-      <div>
+    <div className={styles.main}>
+      <h3>Take the first step towards the answer</h3>
+      <div className={styles.questionInput}>
         <input
           placeholder="Enter question title"
           value={title}
@@ -61,11 +63,19 @@ const QuestionForm = () => {
           onChange={(e) => setQuestion(e.target.value)}
         />
       </div>
-      <Button
-        onClicking={postQuestion}
-        isLoading={false}
-        title="Post question"
-      />
+
+      <div className={styles.inputBtn}>
+        <Button
+          onClicking={postQuestion}
+          isLoading={false}
+          title="Post question"
+        />
+      </div>
+      {error && (
+        <div className={styles.error}>
+          Please make sure all question input fields are populated.
+        </div>
+      )}
     </div>
   );
 };

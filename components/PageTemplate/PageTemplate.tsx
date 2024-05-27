@@ -14,7 +14,10 @@ const PageTemplate = ({ children }: PageTemplateProps) => {
     <div className={styles.wrapper}>
       <Header pageName={logo} nav={nav} />
       <div className={styles.content}>{children}</div>
-      <Footer websiteName="Ask'a'Choom" socialLinks="FB" />
+      <Footer
+        websiteName="@Willsoft, 2024"
+        preface="We do not take responsibility for user generated content. All questions and answers are created by other individuals and not the website team, unless marked otherwise. "
+      />
     </div>
   );
 };

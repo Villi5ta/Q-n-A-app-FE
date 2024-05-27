@@ -33,15 +33,26 @@ const Features = () => {
         </div>
       </div>
 
-      <h2>Questions</h2>
+      <div className={styles.forumLinksWrapper}>
+        <h2>Your community awaits</h2>
+        <div className={styles.forumLinks}>
+          <div className={styles.forumLink}>
+            <h5>See what people are discussing</h5>
 
-      <Link href={"/questions"}>
-        <Button isLoading={false} title="Go to forum" />
-      </Link>
+            <Link href={"/questions"}>
+              <Button isLoading={false} title="Go to forum" />
+            </Link>
+          </div>
 
-      <Link href={"/add_question"}>
-        <Button isLoading={false} title="Add question" />
-      </Link>
+          <div className={styles.forumLink}>
+            <h5>Got your own question? Ask away</h5>
+
+            <Link href={"/add_question"}>
+              <Button isLoading={false} title="Add question" />
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

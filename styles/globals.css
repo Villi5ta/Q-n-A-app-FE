@@ -6,8 +6,12 @@
   --page-color-two-darker: #ff7300;
   --page-color-three: #3e6d9c;
   --page-color-four: #001253;
+  --page-color-six: #ffffff;
+  --page-color-seven: #000000;
 
-  --text-color-one: #ffff;
+  --light-highlight: #fefefe;
+
+  --text-color-one: #f8f8f8;
   --text-color-two: #001253;
 }
 
@@ -20,6 +24,7 @@ body {
   max-width: 1440px;
   margin: auto;
   font-family: "Roboto+condensed", sans-serif;
+  letter-spacing: 0.07rem;
 }
 
 h1 a {

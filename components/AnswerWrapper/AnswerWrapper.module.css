@@ -1,0 +1,34 @@
+.main {
+  max-width: 60rem;
+  margin: 2rem;
+}
+
+.main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main li {
+  list-style: none;
+}
+
+.answer {
+  background-color: var(--page-color-four);
+  color: var(--page-color-six);
+  padding: 1rem;
+}
+
+.answerFooter {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--page-color-two-darker);
+}
+
+.user {
+  background-color: var(--page-color-two-darker);
+  color: var(--page-color-six);
+  width: fit-content;
+  padding: 0.3rem;
+  align-content: center;
+}

@@ -6,7 +6,7 @@ type ButtonProps = {
   onClicking?: () => void;
   isLoading: boolean;
   title: string;
-  type?: "Warning" | "Regular";
+  type?: "Warning" | "Regular" | "Like";
   className?: string;
 };
 
@@ -17,14 +17,17 @@ const Button = ({
   type,
   className,
 }: ButtonProps) => {
+  const getButtonClasses = () => {
+    let buttonClasses = styles.main;
+    if (type === "Warning") buttonClasses += ` ${styles.warning}`;
+    if (type === "Like") buttonClasses += ` ${styles.like}`;
+    if (className) buttonClasses += ` ${className}`;
+    return buttonClasses;
+  };
+
   return (
-    <button
-      className={`${styles.main} ${type === "Warning" && styles.warning} ${
-        className && className
-      }`}
-      onClick={onClicking}
-    >
-      {isLoading ? <Spinner /> : <>{title}</>}
+    <button className={getButtonClasses()} onClick={onClicking}>
+      {isLoading ? <Spinner /> : title}
     </button>
   );
 };

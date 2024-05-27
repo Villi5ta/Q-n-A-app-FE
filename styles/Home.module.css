@@ -26,10 +26,6 @@
   border: 2px solid var(--text-color-one);
   padding: 1.2rem 3.3rem;
   background-color: var(--page-color-two);
-}
-
-.heroBtn button a {
-  text-decoration: none;
   color: var(--text-color-one);
 }
 
@@ -37,13 +33,34 @@
   background-color: var(--page-color-two-darker);
   scale: 1.05;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .main img {
-  width: 80%;
+  max-width: 80%;
 }
 
 .imgWrapper {
   display: flex;
   justify-content: right;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main img {
+    max-width: 100%;
+    height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .heroSectionWrapper {
+    padding: 1rem;
+    padding-bottom: 0;
+  }
 }

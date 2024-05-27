@@ -1,16 +1,25 @@
 .main {
-  padding: 0.5rem;
+  padding: 0.7rem;
   border: none;
   cursor: pointer;
   transition: 0.3s;
+  background-color: var(--page-color-two);
+  font-weight: 600;
 }
 
 .main:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: var(--text-color-one);
 }
 
 .warning {
   background-color: brown;
-  color: white;
+  color: var(--page-color-six);
   font-weight: 700;
+}
+
+.like {
+  background-color: var(--page-color-three);
+  color: rgb(255, 255, 255);
+  list-style-type: circle;
 }

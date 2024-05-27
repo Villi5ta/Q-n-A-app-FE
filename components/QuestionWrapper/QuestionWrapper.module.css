@@ -1,0 +1,29 @@
+.questionContentWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  gap: 2rem;
+}
+
+.questionPosterName {
+  background-color: var(--page-color-four);
+  width: fit-content;
+  color: var(--page-color-six);
+  padding: 0.5rem;
+}
+
+.questionContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  text-indent: 1rem;
+  background-color: var(--page-color-four);
+  color: var(--page-color-six);
+  padding: 1rem;
+}
+
+.questionDeleteBtn {
+  text-align: right;
+}

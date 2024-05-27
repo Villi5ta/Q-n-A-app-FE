@@ -3,4 +3,12 @@
   background-color: var(--page-color-one);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.preface {
+  max-width: 40rem;
+  font-size: 0.8rem;
+  text-align: justify;
 }
