@@ -25,5 +25,6 @@
 }
 
 .howToInstructionsWrapper h3 {
+  text-indent: 1rem;
   border-bottom: 0.2rem solid var(--page-color-two-darker);
 }

@@ -6,13 +6,11 @@ import axios from "axios";
 import QuestionWrapper from "../../components/QuestionWrapper/QuestionWrapper";
 import AnswerForm from "../../components/AnswerForm/AnswerForm";
 import AnswerWrapper from "../../components/AnswerWrapper/AnswerWrapper";
-import QuestionCard from "@/components/QuestionCard/QuestionCard";
 
 const Question = () => {
   const router = useRouter();
 
   const [question, setQuestion] = useState();
-  const [answer, setAnswer] = useState(AnswerForm());
 
   const fetchQuestion = async () => {
     try {

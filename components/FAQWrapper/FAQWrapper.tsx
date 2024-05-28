@@ -8,13 +8,13 @@ const FAQWrapper = () => {
     {
       id: 1,
       fQuestion: "Is this forum free?",
-      fAnswer: "Yes, of course, not need to pay for anything",
+      fAnswer: "Yes, of course, not need to pay for anything.",
     },
     {
       id: 2,
-      fQuestion: "Do I need an account to post a question",
+      fQuestion: "Do I need an account to post a question?",
       fAnswer:
-        "An account is required, you can create one in „Create account“ page ",
+        "An account is required, you can create one in „Create account“ page. ",
     },
     {
       id: 3,

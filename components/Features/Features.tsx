@@ -12,7 +12,7 @@ const Features = () => {
           <h4>Easy to use</h4>
           <p>
             Our question and answer app Ask&apos;a&apos;Choom features a simple
-            design so you can ask your questions and the get the answers fast
+            design so you can ask your questions and the get the answers fast.
           </p>
         </div>
 
