@@ -2,7 +2,8 @@
 const nextConfig = {
   reactStrictMode: false,
   env: {
-    SERVER_URL: "http://localhost:3001",
+    SERVER_URL: "https://q-n-a-app.onrender.com",
+    // SERVER_URL: "http://localhost:3001",
   },
 };
 
